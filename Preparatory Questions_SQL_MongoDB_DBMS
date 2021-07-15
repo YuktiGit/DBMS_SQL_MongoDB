@@ -1,0 +1,667 @@
+Preparatory Questions
+
+Q1) Given the basic ER and relational models, which of the following is INCORRECT?
+1)	An attribute of an entity can have more than one value
+2)	An attribute of an entity can be composite
+3)	In a row of a relational table, an attribute can have more than one value
+4)	In a row of a relational table, an attribute can have exactly one value or a NULL value
+Ans : 3
+Q2) Consider a directed line(-->) from the relationship set advisor to both entity sets instructor and student. This indicates _________ cardinality
+     1) One to many
+     2) One to one
+     3) Many to many
+     4) Many to one
+Ans : 2
+Q3) An entity set that does not have sufficient attributes to form a primary key is termed as :
+    1) Strong entity set
+    2) Variant set
+    3) Weak entity set
+    4) Variable set
+Ans : 3
+Q4) In which of the following cases an entity instance must be a member of only one subtype?
+1)	Disjoint with total specialisation
+2)	Disjoint with partial specialisation
+3)	Overlap with total specialisation
+4)	Overlap with Partial Specialisation
+      Ans : 1
+Q5) Which of the following indicates the maximum number of entities can be involved in a relationship ?
+1) Minimum cardinality
+2) Maximum Cardinality
+3) ERD
+4) Greater Entity Count (GEC)
+
+Ans : 2
+Q6) In an Entity-Relationship (ER) model, suppose R is a many-to-one relationship from entity   set E1 to entity set E2. Assume that E1 and E2 participate totally in R and that the cardinality of E1 is greater that the cardinality of E2. Which one of the following is true about R?
+1)	Every entity in E1 is associated with exactly one entity in E2.
+2)	Some entity in E1 is associated with more than one entity in E2.
+3)	Every entity in E2 is associated with exactly one entity in E1.
+4)	Every entity in E2 is associated with at most one entity in E1.
+      Ans : 1
+Q7) Which symbol denote derived attributes in ER Model?
+1)	Double ellipse
+2)	Dashed ellipse
+3)	Squared ellipse
+4)	Ellipse with attribute name underlined
+Ans : 2
+Q8)  How are roles specified in an ER diagram
+      1) By labelling the rectangles
+      2) By labelling the diamonds
+      3) Roles cannot be specified in an ER diagram
+      4) By labelling the lines
+Ans : 4
+Q9) For a weak entity set to be meaningful, it must be associated with another entity set in combi nation with some of their attribute values, is called as:
+1)	Neighbour Set
+2)	Strong Entity Set
+3)	Owner Entity Set
+4)	Weak Set
+Ans : 3
+Q10) Which of the following statements is FALSE about weak entity set?
+1)	Weak entities can be deleted automatically when their strong entity is deleted.
+2)	Weak entity set avoids the data duplication and consequent possible inconsistencies caused by duplicating the key of the strong entity.
+3)	A weak entity set has no primary keys unless attributes of the strong entity set on which it depends are included
+4)	Tuples in a weak entity set are not partitioned according to their relationship with tuples in a strong entity set
+Ans : 4
+Q1)  In which of the following, a separate schema is created consisting of that attribute and the primary key of the entity set.
+     1) A many-to-many relationship set
+     2) A multivalued attribute of an entity set
+     3) A one-to-many relationship set
+     4) All of the mentioned
+Ans : 2
+Q2) Consider the following ER diagram
+ 
+ The minimum number of tables needed to represent M, N, P, R1, R2 is
+1)	2
+2)	3
+3)	4
+4)	5
+Ans : 2
+
+Q3) Consider the data given in above question. Which of the following is a correct attribute set for one of the tables for the correct answer to the above question?
+1)	{M1, M2, M3, P1}
+2)	{M1, P1, N1, N2}
+3)	{M1, P1, N1}
+4)	{M1, P1}
+Ans : 1
+
+Q4) Let E1 and E2 be two entities in an E/R diagram with simple single-valued attributes. R1 and R2 are two relationships between E1 and E2, where R1 is one-to-many and R2 is many-to-many. R1 and R2 do not have any attributes of their own. What is the minimum number of tables required to represent this situation in the relational model?
+1)	2
+2)	3
+3)	4
+4)	5
+Ans : 3
+Q5) What is the min and max number of tables required to convert an ER diagram with 2 entities and 1 relationship between them with partial participation constraints of both entities?
+1)	Min 1 and max 2
+2)	Min 1 and max 3
+3)	Min 2 and max 3
+4)	Min 2 and max 2
+Ans : 3
+Q6) Which of the following has each related entity set has its own schema and there is an additional schema for the relationship set.
+      1) A many-to-many relationship set
+      2) A multivalued attribute of an entity set
+      3) A one-to-many relationship set
+      4) All of the mentioned
+     Ans : 1
+Q7) For each attribute of a relation, there is a set of permitted values, called the ________ of that attribute.
+     1) Domain
+     2) Relation
+     3) Set
+     4) Schema
+     Ans : 4
+Q8) Let M and N be two entities in an E-R diagram with simple single value attributes. R1 and R2 are two relationship between M and N, where as R1 is one-to-many and R2 is many-to-many. The minimum number of tables required to represent M, N, R1 and R2 in the relational model are _______.
+1)	4
+2)	6
+3)	7
+4)	3
+     Ans :  4
+Q9) Database __________ which is the logical design of the database, and the database _______ which is a snapshot of the data in the database at a given instant in time.
+     1) Instance, Schema
+     2) Relation, Schema
+     3) Relation, Domain
+     4) Schema, Instance
+     Ans : 4
+Q10) Which option only works for a  specialization whose subclasses are total (every entity in the superclass must belong to  (at least) one of the subclasses) while the mapping of specialisation / generalisation form EER diagram to relational table :
+1)	Multiple relations-Superclass and subclasses.
+2)	Multiple relations-Subclass relations only : 
+3)	Single relation with one type attribute
+4)	Single relation with multiple type attributes.
+     Ans : 2
+1)	Suppose (A, B) and (C,D) are two relation schemas. Let r1 and r2 be the corresponding relation instances. B is a foreign key that refers to C in r2. If data in r1 and r2 satisfy referential integrity constraints, which of the following is ALWAYS TRUE?
+ 
+
+1)	A
+2)	B
+3)	C
+4)	D
+Ans : 1
+2)	Given the following statements:
+ S1: A foreign key declaration can always  be replaced by an equivalent check assertion in SQL.
+S2: Given the table R(a,b,c) where a and b together form the primary key, the following is a valid table definition.
+
+   CREATE TABLE S (
+            a INTEGER,
+            d INTEGER,
+            e INTEGER,
+            PRIMARY KEY (d),
+            FOREIGN KEY (a) references R)
+
+Which one of the following statements is CORRECT?
+1)	S1 is TRUE and S2 is FALSE.
+2)	Both S1 and S2 are TRUE.
+3)	S1 is FALSE and S2 is TRUE.
+4)	Both S1 and S2 are FALSE
+Ans : 4
+Q3)  Which of the following is not an integrity constraint?
+         1) Not null
+         2) Positive
+         3) Unique
+         4) Check ‘predicate’
+Ans : 2
+Q4) CREATE TABLE Manager(ID NUMERIC,Name VARCHAR(20),budget NUMERIC,Details VARCHAR(30));
+In order to ensure that the value of budget is non-negative which of the following should be used?
+       1)Check(budget>0)
+       2)Check(budget<0)
+       3)Alter(budget>0)
+       4) Alter(budget<0)
+Ans : 1
+Q5) The following table has two attributes A and C where A is the primary key and C is the foreign key referencing A with on-delete cascade.
+A	C
+2	4
+3	4
+4	3
+5	2
+7	2
+9	5
+6	4
+The set of all tuples that must be additionally deleted to preserve referential integrity when the tuple (2,4) is deleted is:
+1)	(3,4) and (6,4)
+2)	(5,2) and (7,2)
+3)	(5,2), (7,2) and (9,5)
+4)	(3,4), (4,3) and (6,4)
+Ans : 3
+Q6) CREATE TABLE course
+( . . .
+FOREIGN KEY (dept name) REFERENCES department. . . );
+Which of the following is used to delete the entries in the referenced table when the tuple is deleted in course table?
+     1) Delete
+     2) Delete cascade
+     3) Set null
+     4) All of the mentioned
+Ans : 2
+Q7) Domain constraints, functional dependency and referential integrity are special forms of ___
+     1) Foreign key
+     2) Primary key
+     3) Assertion
+     4) Referential constraint
+Ans : 3
+Q8 ) Which of the following can be addressed by enforcing a referential integrity constraint?
+      1) All phone numbers must include the area code
+      2) Certain fields are required (such as the email address, or phone number) before the  record 	is accepted
+      3) Information on the customer must be known before anything can be sold to that customer
+      4) When entering an order quantity, the user must input a number and not some text (i.e., 12 	rather than ‘a dozen’)
+Ans : 3
+Q9) Given relations r(w, x) and s(y, z), the result of
+SELECT DISTINCT w, x
+FROM r, s 
+is guaranteed to be same as r, provided
+1)	r has no duplicates and s is non-empty
+2)	r and s have no duplicates
+3)	s has no duplicates and r is non-empty
+4)	r and s have the same number of tuples
+Ans : 1
+
+Q10) In SQL, relations can contain null values, and comparisons with null values are treated as unknown. Suppose all comparisons with a null value are treated as false. Which of the following pairs is not equivalent?
+1)	x = 5 AND not(not(x = 5))
+2)	x = 5 AND x> 4 and x < 6, where x is an integer
+3)	x ≠ 5 AND not (x = 5)
+4)	None of the above
+Ans : 3
+Q1) Which operator performs Pattern matching ?
+1)	BETWEEN operator
+2)	LIKE operator
+3)	EXISTS operator
+4)	None of the above
+Ans : 2
+Q2) In SQL which commands are used to change the storage characteristics of the table?
+1)	ALTER TABLE
+2)	MODIFY TABLE
+3)	CHANGE TABLE
+4)	All of the above
+      Ans : 1
+Q3) ___________removes all rows from a table without logging the individual row deletions.
+        1) DELETE
+        2) REMOVE
+        3) DROP
+        4) TRUNCATE
+Ans : 1
+Q4) If you don’t specify ASC or DESC after a SQL ORDER BY clause, the following is used by default : 
+1) ASC
+2) DESC
+3) There is no default value
+4) None of the mentioned
+Ans : 1
+Q5) What is the purpose of the SQL AS clause?
+1) The AS SQL clause is used to change the name of a column in the result set or to assign a name to a derived column
+2) The AS clause is used with the JOIN clause only
+3) The AS clause defines a search condition
+4) All of the mentioned
+Ans : 1
+Q6) Which of the following command is used to delete a table in SQL?
+1)	Delete
+2)	Truncate
+3)	Remove
+4)	Drop
+Ans : 4
+Q7) Which of the following commands makes the updates performed by the transaction permanent in the database?
+1)	ROLLBACK
+2)	COMMIT
+3)	TRUNCATE
+4)	DELETE
+Ans : 2
+Q8) Select operation in SQL is equivalent to
+1)	the selection operation in relational algebra
+2)	the selection operation in relational algebra, except that select in SQL retains duplicates
+3)	the projection operation in relational algebra
+4)	the projection operation in relational algebra, except that select in SQL retains duplicates
+Ans : 4
+Q1) Database table by name Loan_Records is given below.
+Borrower    Bank_Manager   Loan_Amount
+ Ramesh     Sunderajan     10000.00
+ Suresh       Ramgopal       5000.00
+ Mahesh      Sunderajan     7000.00
+What is the output of the following SQL query?
+
+SELECT Count(*) 
+FROM  ( ( SELECT Borrower, Bank_Manager 
+          FROM Loan_Records) AS S 
+          NATURAL JOIN ( SELECT Bank_Manager, Loan_Amount 
+                         FROM Loan_Records) AS T );
+
+1) 3
+2) 9
+3) 5
+4) 6	
+Ans : 3	
+ 
+Q2) Which product is returned in a join query have no join condition:
+1) Equijoins
+2) Cartesian
+3) Both Equijoins and Cartesian
+4) None of the mentioned 
+Ans : 2
+Q3) Which join refers to join records from the write table that have no matching key in the left table are include in the result set:
+1) Left outer join
+2) Right outer join
+3) Full outer join
+4) Half outer join
+Ans : 2
+Q4) Which operation are allowed in a join view:
+1) UPDATE
+2) INSERT
+3) DELETE
+4) All of the mentioned
+Ans : 4
+Q5) Which view that contains more than one table in the top-level FROM clause of the SELECT statement:
+1) Join view
+2) Datable join view
+3) Updatable join view
+4) All of the mentioned
+Ans : 3
+Q6) The following SQL is which type of join: 
+SELECT CUSTOMER_T. CUSTOMER_ID, ORDER_T. CUSTOMER_ID, NAME, ORDER_ID 
+FROM CUSTOMER_T,ORDER_T 
+WHERE CUSTOMER_T. CUSTOMER_ID = ORDER_T. CUSTOMER_ID ?
+1) Equi-join
+2) Natural join
+3) Outer join
+4) Cartesian join
+Ans : 1
+Q7) The following SQL is which type of join: 
+SELECT CUSTOMER_T. CUSTOMER_ID, ORDER_T. CUSTOMER_ID, NAME, ORDER_ID 
+FROM CUSTOMER_T,ORDER_T ?
+1) Equi-join
+2) Natural join
+3) Outer join
+4) Cartesian join
+Ans : 4
+Q8) Which of the following statements is true concerning subqueries?
+1) Involves the use of an inner and outer query
+2) Cannot return the same result as a query that is not a subquery
+3) Does not start with the word SELECT
+4) All of the mentioned
+Ans : 1
+Q9) Suppose ORACLE relation R(A, B) currently has tuples {(1, 2), (1, 3), (3, 4)} and relation S(B, C) currently has {(2, 5), (4, 6), (7, 8)}. Consider the following two SQL queries SQ1 and SQ2 : 
+SQ1 : Select * From R Full Join S On R.B = S.B; 
+SQ2 : Select * From R Inner Join S On R.B = S.B; 
+The numbers of tuples in the result of the SQL query SQ1 and the SQL query SQ2 are given by:
+1)	2 and 6 respectively
+2)	6 and 2 respectively
+3)	2 and 4 respectively
+4)	4 and 2 respectively
+Ans : 4
+Q10) ) Which of the following is true ? I. Implementation of self-join is possible in SQL with table alias. II. Outer-join operation is basic operation in relational algebra. III. Natural join and outer join operations are equivalent.
+1)	I and II are correct.
+2)	II and III are correct.
+3)	Only III is correct.
+4)	Only I is correct.
+
+Ans:4  	
+Q1) Which of the following statements are TRUE about an SQL query? P : An SQL query can contain a HAVING clause even if it does not have a GROUP BY clause Q : An SQL query can contain a HAVING clause only if it has a GROUP BY clause R : All attributes used in the GROUP BY clause must appear in the SELECT clause S : Not all attributes used in the GROUP BY clause need to appear in the SELECT clause
+1)	P and R
+2)	P and S
+3)	Q and R
+4)	Q and S
+Ans: 2
+Q2) Consider a database table T containing two columns X and Y each of type integer. After the creation of the table, one record (X=1, Y=1) is inserted in the table. Let MX and My denote the respective maximum values of X and Y among all records in the table at any point in time. Using MX and MY, new records are inserted in the table 128 times with X and Y values being MX+1, 2*MY+1 respectively. It may be noted that each time after the insertion, values of MX and MY change. What will be the output of the following SQL query after the steps mentioned above are carried out?
+SELECT Y FROM T WHERE X=7;
+1)	127
+2)	255
+3)	129
+4)	257
+      Ans: 1
+Q3) The employee information in a company is stored in the relation
+Employee (name, sex, salary, deptName)
+
+Consider the following SQL query
+select deptName
+       from Employee
+       where sex = 'M'
+       group by deptName
+       having avg (salary) > (select avg (salary) from Employee)
+It returns the names of the department in which
+1)	the average salary is more than the average salary in the company
+2)	the average salary of male employees is more than the average salary of all male employees in the company
+3)	the average salary of male employees is more than the average salary of employees in the same department
+4)	the average salary of male employees is more than the average salary in the company.
+Ans: 4
+
+
+Q4) Which of the following is aggregate function in SQL?
+1) Avg
+2) Select
+3) Ordered by
+4) distinct
+Ans: 1
+
+Q5) Observe the given SQL query and choose the correct option.
+
+SELECT branch_name, COUNT (DISTINCT customer_name) 
+FROM depositor, account 
+WHERE depositor.account_number = account.account_number 
+GROUP BY branch_id
+1) The query is syntactically correct but gives the wrong answer
+2) The query is syntactically wrong
+3) The query is syntactically correct and gives the correct answer
+4) The query contains one or more wrongly named clauses.
+Ans: 2
+
+
+
+Q6) Choose the correct option regarding the query
+SELECT branch_name, COUNT (DISTINCT customer_name) 
+FROM depositor, account 
+WHERE depositor.account_number = account.account_number 
+       GROUP BY branch_id
+       HAVING avg(balance) = 10000;
+1) The having clause checks whether the query result is true or not
+2) The having clause does not check for any condition
+3) The having clause allows only those tuples that have average balance 10000
+4) None of the mentioned
+Ans: 3
+Q7) Which keyword is used to rename the resulting attribute after the application of the aggregation function?
+1) rename
+2) as
+3) replace
+4) to
+Ans: 2
+Q8) Consider the following ORACLE relations : 
+R (A, B, C) = {<1, 2, 3>, <1, 2, 0>, <1, 3, 1>, <6, 2, 3>, <1, 4, 2>, <3, 1, 4> } S (B, C, D) = {<2, 3, 7>, <1, 4, 5>, <1, 2, 3>, <2, 3, 4>, <3, 1, 4>}. 
+Consider the following two SQL queries SQ1 and SQ2 :
+SQ1 : SELECT R⋅B, AVG (S⋅B) FROM R, S WHERE R⋅A = S⋅C AND S⋅D < 7 GROUP BY R⋅B;
+SQ2 : SELECT DISTINCT S⋅B, MIN (S⋅C) FROM S GROUP BY S⋅B HAVING COUNT (DISTINCT S⋅D) > 1; 
+If M is the number of tuples returned by SQ1 and N is the number of tuples returned by SQ2 then
+1)	M = 4, N = 2
+2)	M = 5, N = 3
+3)	M = 2, N = 2
+4)	M = 3, N = 3
+           Ans: 1
+
+Q9) What values does the count(*) function ignore?
+1) Repetitive values
+2) Null values
+3) Characters
+4) Integers
+    Ans: 2
+
+Q10) State true or false: Any attribute which is present in the having clause without being aggregated must not be present in the group by clause.
+1) True
+2) False
+     Ans: 2
+Q1) Database table by name Loan_Records is given below.
+Borrower    Bank_Manager   Loan_Amount
+Ramesh      Sunderajan          10000.00
+Suresh        Ramgopal            5000.00
+Mahesh      Sunderajan          7000.00
+
+What is the output of the following SQL query?
+
+SELECT Count(*) 
+FROM  ( ( SELECT Borrower, Bank_Manager 
+          FROM Loan_Records) AS S 
+          NATURAL JOIN ( SELECT Bank_Manager, Loan_Amount 
+                         FROM Loan_Records) AS T );
+
+1)	3
+2)	9
+3)	5
+4)	6
+Ans:3
+
+Q2) A relational schema for a train reservation database is given below. Passenger (pid, pname, age) Reservation (pid, class, tid)
+Table: Passenger
+pid   pname   age
+-----------------
+ 0    Sachin   65
+ 1    Rahul     66
+ 2    Sourav   67
+ 3    Anil       69
+
+Table : Reservation
+pid  class  tid
+---------------
+ 0    AC   8200
+ 1    AC   8201
+ 2    SC   8201
+ 5    AC   8203
+ 1    SC   8204
+ 3    AC   8202
+What pids are returned by the following SQL query for the above instance of the tables?
+
+SELECT pid
+FROM Reservation ,
+WHERE class ‘AC’ AND
+    EXISTS (SELECT *
+       FROM Passenger
+       WHERE age > 65 AND
+       Passenger. pid = Reservation.pid)
+1)	1,0
+2)	1,2
+3)	1,3
+4)	1,5
+Ans: 3
+Q3) Consider the following relational schema:
+Suppliers(sid:integer, sname:string, city:string, street:string)
+Parts(pid:integer, pname:string, color:string)
+Catalog(sid:integer, pid:integer, cost:real)
+
+Consider the following relational query on the above database:
+SELECT S.sname
+    FROM Suppliers S
+        WHERE S.sid NOT IN (SELECT C.sid
+                            FROM Catalog C
+                            WHERE C.pid NOT IN (SELECT P.pid  
+                                                FROM Parts P
+                                               WHERE P.color<> 'blue'))
+Assume that relations corresponding to the above schema are not empty. Which one of the following is the correct interpretation of the above query?
+1)	Find the names of all suppliers who have supplied a non-blue part.
+2)	Find the names of all suppliers who have not supplied a non-blue part.
+3)	Find the names of all suppliers who have supplied only blue parts.
+4)	Find the names of all suppliers who have not supplied only blue parts.
+5)	None
+        Ans: 4
+
+Q4) Consider the table employee(empId, name, department, salary) and the two queries Q1 ,Q2 below. Assuming that department 5 has more than one employee, and we want to find the employees who get higher salary than anyone in the department 5, which one of the statements is TRUE for any arbitrary employee table?
+Q1 : Select e.empId
+     From employee e
+     Where not exists
+        (Select * From employee s where s.department = “5” and 
+                                        s.salary >=e.salary)
+Q2 : Select e.empId
+     From employee e
+     Where e.salary > Any
+    (Select distinct salary From employee s Where s.department = “5”)
+1)	Q1 is the correct query
+2)	Q2 is the correct query
+3)	Both Q1 and Q2 produce the same answer.
+4)	Neither Q1 nor Q2 is the correct query
+Ans: 1
+Q5) Consider the following relational schema:
+  employee(empId, empName, empDept)
+  customer(custId, custName, salesRepId, rating)
+
+salesRepId is a foreign key referring to empId of the employee relation. Assume that each employee makes a sale to at least one customer. What does the following query return?
+
+SELECT empName
+       FROM employee E
+       WHERE NOT EXISTS ( SELECT custId
+                          FROM customer C
+                          WHERE C.salesRepId = E.empId
+                            AND C.rating <> `GOOD`);
+1)	Names of all the employees with at least one of their customers having a ‘GOOD’ rating.
+2)	Names of all the employees with at most one of their customers having a ‘GOOD’ rating.
+3)	Names of all the employees with none of their customers having a ‘GOOD’ rating.
+4)	Names of all the employees with all their customers having a ‘GOOD’ rating.
+Ans: 4
+
+Q6) The ______ clause allows us to select only those rows in the result relation of the ____ clause that satisfy a specified predicate.
+	1) Where, from
+	2) From, select
+	3) Select, from
+	4) From, where
+   Ans: 1
+Q7) The relation book (title, price) contains the titles and prices of different books. Assuming that no two books have the same price, what does the following SQL query list?
+  select title
+  from book as B
+  where (select count(*)
+     from book as T
+     where T.price > B.price) < 5 
+1)	Titles of the four most expensive books
+2)	Title of the fifth most inexpensive book
+3)	Titles of the five most expensive books
+4)	Titles of the five most expensive books
+   Ans: 4
+Q8) Consider the following Employee table
+ID   salary   DeptName
+1    10000      EC
+2    40000      EC
+3    30000      CS
+4    40000      ME
+5    50000      ME
+6    60000      ME 
+7    70000      CS 
+How many rows are there in the result of following query?
+
+SELECT E.ID
+FROM  Employee E
+WHERE  EXISTS  (SELECT E2.salary
+               FROM Employee E2
+               WHERE E2.DeptName = 'CS'
+               AND   E.salary > E2.salary)
+1) 0
+2) 4
+3) 5
+4) 6
+Ans: 3
+
+Q9)  The ________ connective tests for set membership, where the set is a collection of values produced by a select clause. The _________ connective tests for the absence of set membership.
+
+1) Or, in
+2) Not in, in
+3) In, not in
+4) In, or
+Ans: 3
+Q10) Consider the following relation:  Cinema (theatre, address, capacity) 
+Which of the following options will be needed at the end of the SQL query
+SELECT P1. address
+FROM Cinema P1 
+Such that it always finds the addresses of theatres with maximum capacity?
+1)	WHERE P1. Capacity> = All (select P2. Capacity from Cinema P2)
+2)	WHERE P1. Capacity> = Any (select P2. Capacity from Cinema P2)
+3)	WHERE P1. Capacity > All (select max(P2. Capacity) from Cinema P2)
+4)	WHERE P1. Capacity > Any (select max (P2. Capacity) from Cinema P2)
+
+    Ans: 1
+Q1) ___________ command displays the list of databases.
+1) show db
+2) show dbs
+3) show data
+4) display dbs
+            Ans: 2
+Q2) Which of the following operation is used to switch to new database mydb ?
+1) use dbs
+2) use db
+3) use mydb
+4) use mydbs
+Ans: 3
+
+Q3) The command to check existence of collection is :
+1) show collection
+2) show collections
+3) show collect
+4) None of the mentioned
+Ans: 2
+Q4) Point out the correct statement:
+1) A database is a set of key-value pairs
+2) A MongoDB deployment hosts a number of databases
+3) A document holds a set of collections
+4) All of the mentioned
+Ans: 2
+Q5) MongoDB stores all documents in:
+1) tables
+2) collections
+3) rows
+4) all of the mentioned
+Ans: 2
+Q6) BSON is a binary representation of ________ documents,
+1) JSON
+2) XML
+3) JScript
+4) All of the mentioned	
+Ans: 1
+
+Q7) MongoDB documents are composed of field-and-value pairs and have the following structure:
+1) <field1:; value1>
+2) <field1: value1;>
+3) <field1: value1>
+4) none of the mentioned
+Ans: 3
+Q8) The ______ field is always the first field in the document.
+1) _id
+2) id
+3) Ob_id
+4) None of the mentioned
+Ans: 1
+
+Q9) The maximum size of a MongoDB document is
+1) 2 MB
+2) 16 MB
+3) 12 MB
+4) There is no maximum size. It depends on RAM
+Ans: 2
+
+Q10) Which of the following statements is true?
+1) MongoDB cannot be used as a file system.
+2) MongoDB can run over single servers only.
+3) Embedded documents and arrays reduce need for joins.
+4) None
+Ans: 3
+
